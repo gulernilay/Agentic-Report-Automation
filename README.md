@@ -2,7 +2,7 @@
 
 ## 📋 Genel Bakış
 
-**Agentic Report Automation**, Chef Seasons için geliştirilmiş bir **tam otomatik aylık raporlama sistemidir.**  
+**Agentic Financial Ratio Report Automation**, şirketlere dair finansal rasyoların (Cari Oran , Likidite Oranı ,Net Kar Marjı , Borçluluk Oranı , Alacak Devir Hızı) ERP'den gelen verilere göre hesaplanıp analiz edildiği **tam otomatik aylık raporlama sistemidir.**  
 Her ay sonunda sistem otomatik olarak:
 
 - QueryRunner API üzerinden veriyi çeker
