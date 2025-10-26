@@ -39,23 +39,29 @@ Windows, Linux, veya Cloud Container ortamlarında çalışabilir
 ## 📁 Proje Yapısı
 
 📦 Agentic-Report-Automation/
-├─ src/
-│ ├─ agents/
-│ │ ├─ orchestrator.py # Ana pipeline akışı
-│ │ ├─ data_agent.py # API'den veri çekme
-│ │ ├─ analysis_agent.py # LLM çağrısı (Groq)
-│ │ └─ mail_agent.py # SMTP ile e-posta gönderimi
-│ ├─ utils/
-│ │ ├─ config.py # Pydantic Settings (.env'den okur)
-│ │ └─ logger.py # Log yapılandırması (Loguru)
-│ └─ main.py # Giriş noktası
-├─ prompts/
-│ └─ report_prompt.txt # LLM analiz prompt şablonu
-├─ .env # Ortam değişkenleri
-├─ Dockerfile # Docker build tanımı
-├─ docker-compose.yml # Container yönetimi
-├─ requirements.txt # Python bağımlılıkları
-└─ README.md # Proje dökümantasyonu
+**src/**
+
+- **agents/**
+  - `orchestrator.py` → Ana pipeline akışı
+  - `data_agent.py` → API'den veri çekme
+  - `analysis_agent.py` → LLM çağrısı (Groq)
+  - `mail_agent.py` → SMTP ile e-posta gönderimi
+- **utils/**
+  - `config.py` → Pydantic Settings (.env'den okur)
+  - `logger.py` → Log yapılandırması (Loguru)
+- `main.py` → Giriş noktası
+
+**prompts/**
+
+- `report_prompt.txt` → LLM analiz prompt şablonu
+
+Diğer dosyalar:
+
+- `.env` → Ortam değişkenleri
+- `Dockerfile` → Docker build tanımı
+- `docker-compose.yml` → Container yönetimi
+- `requirements.txt` → Python bağımlılıkları
+- `README.md` → Proje dökümantasyonu
 
 ## 🔧 Kurulum
 
@@ -71,28 +77,41 @@ Kök dizine .env adında bir dosya ekle ve aşağıdaki örneği düzenle:
 
 # QueryRunner API
 
-API_BASE_URL=http://78.189.179.50:17487
+API_BASE_URL
+
 API_LOGIN_PATH=/auth/login
+
 API_QUERY_PATH=/query/v2/run-basic
-API_USERNAME=testnilay
-API_PASSWORD=123456
+
+API_USERNAME
+
+API_PASSWORD
 
 # LLM / Groq
 
 LLM_PROVIDER=groq
+
 GROQ_API_KEY=gsk_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
 GROQ_MODEL=llama-3.1-8b-instant
+
 GROQ_API_URL=https://api.groq.com/openai/v1/chat/completions
 
 # Gmail SMTP
 
 SMTP_SERVER=smtp.gmail.com
+
 SMTP_PORT=587
+
 SMTP_USER=seningmailadresin@gmail.com
+
 SMTP_PASS=gmail_app_password
+
 MAIL_FROM=seningmailadresin@gmail.com
+
 MAIL_TO=nilay@chefseasons.com
-MAIL_SUBJECT=Chef Seasons Otomatik Rapor
+
+MAIL_SUBJECT=Finansal Rapor
 
 # Logging
 
