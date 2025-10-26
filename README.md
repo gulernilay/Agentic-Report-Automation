@@ -151,8 +151,11 @@ crontab -e dosyasına şunu ekle:
 Tüm loglar konsola ve logs/ dizinine kaydedilir.
 
 Örnek log satırları:
+
 2025-10-31 23:59:01 | INFO | src.agents.orchestrator:run_pipeline - === Agentic pipeline started ===
+
 2025-10-31 23:59:08 | INFO | src.agents.analysis_agent:generate_report - Report successfully generated.
+
 2025-10-31 23:59:15 | INFO | src.agents.mail_agent:send_report - ✅ Email sent successfully.
 
 🧠 Geliştirici Notları
