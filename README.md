@@ -120,10 +120,13 @@ LOG_LEVEL=INFO
 ## 3️⃣ Docker Image Oluştur
 
 docker compose build
+
 veya tek satırda çalıştırmak için:
+
 docker compose up --build
 
-🕒 Ay Sonu Otomatik Çalıştırma
+## 🕒 Ay Sonu Otomatik Çalıştırma
+
 🔹 Windows
 
 1. Task Scheduler aç
@@ -136,7 +139,8 @@ docker compose up --build --abort-on-container-exit
 
 4. Trigger:
    “Monthly” → Her ayın 30 veya 31’i → Saat 23:59
-   🔹 Linux
+
+🔹 Linux
 
 crontab -e dosyasına şunu ekle:
 
