@@ -1,0 +1,90 @@
+# ===============================
+# 👩‍💻 AGENTIC-REPORT-AUTOMATION
+# ===============================
+
+# Bytecode ve cache dosyaları
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Sanal ortam klasörleri
+venv/
+env/
+.venv/
+ENV/
+env.bak/
+
+# IDE klasörleri
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Jupyter Notebook checkpoint’leri
+.ipynb_checkpoints/
+
+# Log dosyaları
+logs/
+*.log
+
+# Geçici dosyalar
+*.tmp
+*.bak
+*.swp
+*.DS_Store
+
+# ===============================
+# 🔐 GİZLİ VE ORTAM DOSYALARI
+# ===============================
+
+# .env (API anahtarları, şifreler)
+.env
+.env.*
+
+# ===============================
+# 🐳 DOCKER
+# ===============================
+
+# Docker build cache
+*.pid
+*.seed
+*.pid.lock
+
+# ===============================
+# 🧱 DERLEME VE DAĞITIM
+# ===============================
+
+build/
+dist/
+*.egg-info/
+*.egg
+*.tar.gz
+*.zip
+
+# ===============================
+# 🧰 GEREKSİZ DOSYALAR
+# ===============================
+
+# PyInstaller / setuptools çıktıları
+*.spec
+*.manifest
+
+# Pytest, coverage çıktıları
+.coverage
+htmlcov/
+.cache/
+
+# ===============================
+# 🧾 RAPOR VE TEST DOSYALARI
+# ===============================
+
+test_results/
+debug_output/
+output_reports/
+
+# ===============================
+# 🌍 GIT KULLANIMI
+# ===============================
+
+# Git metadata dışı
+*.orig

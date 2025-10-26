@@ -1,0 +1,8 @@
+version: "3.9"
+
+services:
+  agentic-report:
+    build: .
+    container_name: agentic-report
+    env_file: .env
+    restart: "no"
